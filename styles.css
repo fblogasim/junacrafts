@@ -1,0 +1,324 @@
+/*Google font import*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body{
+	margin : 0;
+	/*overflow-x: hidden;*/
+	font-family: "Comfortaa", sans-serif;
+	font-optical-sizing: auto;
+
+	font-style: normal;
+}
+
+h1{
+	color: #618985;
+}
+
+h2{
+	color: #96bbbb;
+}
+
+h3{
+	color: #c19875;
+}
+
+nav {
+	margin-top: 50px;
+	color: #1c0221;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+button {
+	height: 40px;
+	width: 150px;
+	border-radius: 30px;
+	border: none;
+	background-color: #414535;
+	color: white;
+	transition: transform 0.4s;
+}
+
+.btn-outline {
+	background-color: rgba(0, 0, 0, 0);
+	color: #618985;
+	outline: 1px #618985 solid;
+}
+
+.btn-outline-white{
+	background-color: rgba(255, 255, 255, 0);
+	color: #f2e3bc;
+	outline: 1px #f2e3bc solid;
+}
+
+button:hover{
+	transform: scale(1.2);
+}
+
+.index-banner .btn-outline:hover{
+	background-color: white;
+}
+
+nav ul {
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+	justify-content: center;
+	overflow: scroll;
+	font-size: 19px;
+}
+
+nav ul li{
+	transition: all 0.2s;
+}
+
+nav ul li:hover {
+	transform: scale(1.2);
+}
+
+nav span {
+	position: absolute;
+	font-size: 22px;
+	top: 50px;
+	left: 10px;
+	transition: all 0.5s;
+	z-index: 10;
+}
+
+@media (width < 900px) {
+	nav span {
+		font-size: 15px;
+		left: -45px;
+		top: 80px;
+		transform: rotate(90deg);
+	}
+
+}
+
+.index-banner {
+	height: 80vh;
+	display: grid;
+	color: #513d51;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right, #c3e991, #cb904d);
+}
+
+.index-banner div{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 40px;
+	border-radius: 15px;
+	max-width: 500px;
+	z-index: 2;
+}
+
+.index-banner div button:hover{
+	transform: scale(1.0);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.index-explore-products {
+	display: flex;
+	overflow: scroll;
+	gap: 20px;
+	padding: 10px;
+}
+
+.index-explore-products article {
+	width: 300px;
+}
+
+.index-img-container{
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.index-banner-cutout{
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	animation: float 2s linear infinite;
+}
+
+
+
+.img-container{
+	overflow: hidden;
+}
+
+.index-explore-products img {
+	max-width: 100%;
+	min-width: 200px;
+	object-fit: 100%;
+	transition: all 0.5s;
+}
+
+.index-explore-products img:hover{
+	transform: scale(1.2);
+}
+
+.index-discount {
+	position: fixed;
+	top: -10px;
+	left: 0px;
+	background-color: black;
+	color: white;
+	height: 40px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	z-index: 9;
+}
+
+
+
+
+@keyframes float{
+	0%{
+		transform: translateY(3px);
+	}
+	50%{
+		transform: translateY(-3px);
+	}
+	100%{
+		transform: translateY(3px);
+	}
+}
+
+#shop-overlay{
+	height: 70vh;
+	background-color: red;
+	position: fixed;
+	top: 90px;
+	width: 100vw;
+	overflow-x: hidden;
+	display: none;
+	left: 0;
+
+}
+
+
+.order-products{
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 30px;
+}
+
+@media (width<600px){
+	.order-products article{
+		padding: 10px;
+	}
+}
+
+.order-key-rings{
+	background-image: url("./photos/key-ring-bg.jpg") ;
+}
+
+.order-custom-frames{
+	background-image: url("./photos/heart-frame-bg.jpg");
+}
+
+.order-other-gifts{
+	background-image: url("./photos/wines-bg.jpg");
+}
+.order-products h3{
+	font-size: 44px;
+}
+
+
+.frame-type{
+	display: flex;
+	color: white;
+	overflow-y: hidden;
+}
+
+.frame-type-paper-rose{
+	flex: 50%;
+	height: 100vh;
+	background-image: url("./photos/heart-frame-bg.jpg");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s ;
+	-o-transition:all 0.5s ;
+	-moz-transition:all 0.5s ;
+	
+}
+
+.frame-type-foam-rose{
+	flex: 50%;
+	height: 100vh;
+	background-image: url("./photos/heart-frame-bg.jpg");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s ;
+	-o-transition:all 0.5s ;
+	-moz-transition:all 0.5s ;
+
+}
+
+.contact-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.frame-type-foam-rose:hover,.frame-type-paper-rose:hover{
+	background-size: 120%;
+}
+
+@media (width < 700px){
+	.frame-type{
+		flex-direction: column;
+	}
+
+	.frame-type-foam-rose, .frame-type-paper-rose{
+		flex: none;
+	}
+}
+
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	background-color: #e9eb87;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer p{
+	text-align: center;
+}
+
+
